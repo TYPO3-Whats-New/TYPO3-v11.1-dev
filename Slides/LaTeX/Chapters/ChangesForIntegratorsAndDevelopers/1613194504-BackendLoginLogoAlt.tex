@@ -7,6 +7,7 @@
 % @language	English
 % ------------------------------------------------------------------------------
 % Feature | 92628 | Add Alt-Text To Login Logo
+% Deprecation | 92628 | Login Logo without Alt-Text
 
 \begin{frame}[fragile]
 	\frametitle{Changes for Integrators and Developers}
@@ -15,9 +16,10 @@
 	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
 
 	\begin{itemize}
-		\item The logo that can be displayed on the backend login now supports
+		\item The logo that can be set on the backend login page now supports
 			an \texttt{alt}-tag.
-		\item This improves the accessibility of the login page.
+		\item If you enable a custom image, set an \texttt{alt}-tag.
+			Otherwise a notice is written to the deprecation log.
 	\end{itemize}
 
 	\begin{figure}
