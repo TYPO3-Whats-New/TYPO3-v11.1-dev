@@ -1,0 +1,43 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.1 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		http://typo3.org/download/release-notes/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Feature | 92942 | Allow icon overlay for newContentElementWizard elements
+
+\begin{frame}[fragile]
+	\frametitle{Changes for Integrators}
+	\framesubtitle{Content Element Wizard}
+
+	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
+
+	\begin{itemize}
+		\item New "new content element" wizard now supports an icon overlay for
+			each wizard element.
+		\item Useful for custom content elements that use the same
+			\texttt{iconIdentifier} multiple times.
+		\item For example (TSconfig):
+\begin{lstlisting}
+mod.wizards.newContentElement.wizardItems {
+  common.elements {
+    my_element {
+      iconIdentifier = content-my-icon
+      iconOverlay = content-my-icon-overlay
+      title = LLL:EXT:my_extension/Resources/Private/Language/ContentTypes.xlf:title
+      description = LLL:EXT:my_extension/Resources/Private/Language/ContentTypes.xlf:description
+      tt_content_defValues {
+        CType = my_element
+      }
+    }
+  }
+}
+\end{lstlisting}
+
+	\end{itemize}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
