@@ -1,0 +1,46 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.1 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		http://typo3.org/download/release-notes/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Feature | 93174 | Lazy console command list
+
+\begin{frame}[fragile]
+	\frametitle{Backend User Interface}
+	\framesubtitle{Console Command List}
+
+	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
+
+	\begin{itemize}
+		\item Two new tag properties have been added to the \texttt{console.command}
+			dependency injection tag:
+
+			\begin{itemize}
+				\item \texttt{description}
+				\item \texttt{hidden}
+			\end{itemize}
+
+		\item The description must be set next to the command name in file
+			\texttt{Services.yaml}:
+
+\begin{lstlisting}
+services:
+  My\Namespace\Command\ExampleCommand:
+    tags:
+      - name: 'console.command'
+        command: 'my:example'
+        description: 'An example command that demonstrates some stuff'
+        hidden: false
+\end{lstlisting}
+
+		\item Extension authors should use this method instead of setting
+			description through \texttt{\$this->setDescription()}.
+
+	\end{itemize}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
