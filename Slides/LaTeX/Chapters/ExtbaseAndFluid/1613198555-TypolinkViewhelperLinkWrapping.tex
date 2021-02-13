@@ -12,10 +12,10 @@
 	\frametitle{Extbase and Fluid}
 	\framesubtitle{TypolinkViewhelper}
 
-	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
+	\lstset{basicstyle=\fontsize{7}{9}\ttfamily}
 
 	\begin{itemize}
-		\item The ViewHelper \texttt{f:link.typolink} features a new argument
+		\item The ViewHelper \texttt{<f:link.typolink ...>} features a new argument
 			\texttt{textWrap} which wraps the link title.
 
 		\item For example:
@@ -28,7 +28,7 @@
 <a href="page-123"><span>My page title</span></a>
 \end{lstlisting}
 
-		\item Note: don't forget to scape quotes:
+		\item Note: don't forget to escape quotes:
 \begin{lstlisting}
 <f:link.typolink parameter="123" textWrap="<span class=\"small\">|</span>" />
 \end{lstlisting}
