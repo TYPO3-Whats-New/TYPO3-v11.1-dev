@@ -15,15 +15,14 @@
 	\lstset{basicstyle=\fontsize{7}{9}\ttfamily}
 
 	\begin{itemize}
-		\item Two new tag properties have been added to the \texttt{console.command}
-			dependency injection tag:
+		\item Two new properties have been added to the \texttt{console.command}
+			dependency injection tag (to used in the \texttt{Services.yaml} file):
 			\begin{itemize}
 				\item \texttt{description}
 				\item \texttt{hidden}
 			\end{itemize}
 			\vspace{0.2cm}
-		\item The description must be set next to the command name in file
-			\texttt{Services.yaml}:
+		\item The description must be set next to the command name:
 \begin{lstlisting}
 services:
   My\Namespace\Command\ExampleCommand:
