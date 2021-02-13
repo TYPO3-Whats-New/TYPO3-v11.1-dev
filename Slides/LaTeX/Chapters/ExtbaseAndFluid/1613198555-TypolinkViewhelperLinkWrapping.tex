@@ -1,0 +1,40 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.1 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		http://typo3.org/download/release-notes/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Feature | 92338 | Allow link text wrapping in TypolinkViewhelper
+
+\begin{frame}[fragile]
+	\frametitle{Extbase and Fluid}
+	\framesubtitle{TypolinkViewhelper}
+
+	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
+
+	\begin{itemize}
+		\item The ViewHelper \texttt{f:link.typolink} features a new argument
+			\texttt{textWrap} which wraps the link title.
+
+		\item For example:
+\begin{lstlisting}
+<f:link.typolink parameter="123" textWrap="<span>|</span>" />
+\end{lstlisting}
+
+		\item Output:
+\begin{lstlisting}
+<a href="page-123"><span>My page title</span></a>
+\end{lstlisting}
+
+		\item Note: don't forget to scape quotes:
+\begin{lstlisting}
+<f:link.typolink parameter="123" textWrap="<span class=\"small\">|</span>" />
+\end{lstlisting}
+
+	\end{itemize}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
