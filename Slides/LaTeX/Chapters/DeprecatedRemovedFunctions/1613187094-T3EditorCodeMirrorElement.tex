@@ -1,0 +1,41 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.1 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		http://typo3.org/download/release-notes/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Deprecation | 93149 | T3Editor JavaScript module replaced by CodeMirrorElement
+
+\begin{frame}[fragile]
+	\frametitle{Deprecated/Removed Functions}
+	\framesubtitle{T3editor}
+
+	\lstset{basicstyle=\fontsize{7}{9}\ttfamily}
+
+	\begin{itemize}
+		\item The T3Editor has been refactored into a custom HTML element:
+\begin{lstlisting}
+<typo3-t3editor-codemirror>
+\end{lstlisting}
+
+		\itm The element features a new JavaScript module:\newline
+			\small
+				\texttt{TYPO3\textbackslash
+					CMS\textbackslash
+					T3editor\textbackslash
+					Element\textbackslash
+					CodeMirrorElement}
+			\normalsize
+
+		\item Using the CSS class "\texttt{t3editor}" is now \textbf{deprecated}:
+\begin{lstlisting}
+<textarea class="t3editor"> ... </textarea>
+\end{lstlisting}
+
+	\end{itemize}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
