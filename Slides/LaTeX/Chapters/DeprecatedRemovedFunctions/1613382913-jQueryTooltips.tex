@@ -1,0 +1,29 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.1 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		http://typo3.org/download/release-notes/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Deprecation | 93506 | jQuery in tooltips
+
+\begin{frame}[fragile]
+	\frametitle{Changes for Integrators and Developers}
+	\framesubtitle{FlexForm Data Data Processor}
+
+	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
+
+	\begin{itemize}
+		\item Passing jQuery objects to the methods \texttt{show()} and \texttt{hide()}
+			of the module \texttt{TYPO3/CMS/Backend/Tooltip} has been marked as
+			\textbf{deprecated}.
+		\item This results in a deprecation warning in the browser's console.
+		\item Migration options:
+			Pass a single \texttt{HTMLElement} or a \texttt{NodeList} to the
+			functions.
+	\end{itemize}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
