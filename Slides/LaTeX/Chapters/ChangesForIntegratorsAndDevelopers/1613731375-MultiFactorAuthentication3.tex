@@ -15,7 +15,17 @@
 	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
 
 	\begin{itemize}
-		\item ...
+		\item TSconfig can be used to disable the MFA field for backend users:
+\begin{lstlisting}
+setup.fields.mfaProviders.disabled = 1
+\end{lstlisting}
+
+		\item It is possible to restrict the available providers for some users
+			or groups (see "Access Rights/List), or by TSconfig:
+\begin{lstlisting}
+auth.mfa.disableProviders := addToList(totp)
+\end{lstlisting}
+
 	\end{itemize}
 
 \end{frame}
