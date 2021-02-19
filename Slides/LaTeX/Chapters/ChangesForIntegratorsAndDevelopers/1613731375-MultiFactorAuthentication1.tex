@@ -1,0 +1,36 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.1 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		http://typo3.org/download/release-notes/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Feature | 93526 | Multi-Factor Authentication (1)
+
+\begin{frame}[fragile]
+	\frametitle{Changes for Integrators and Developers}
+	\framesubtitle{Multi-Factor Authentication (1)}
+
+	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
+
+	\begin{itemize}
+		\item The TYPO3 Core includes two MFA providers by default:
+
+			\begin{itemize}
+				\item Time-based one-time password (TOTP)
+				\item Recovery codes (\textit{fallback provider})
+			\end{itemize}
+
+		\item Additional providers can be added as TYPO3 extensions.
+		\item MFA can be configured for every backend user by default.
+			Use TSconfig to disable this field:
+\begin{lstlisting}
+setup.fields.mfaProviders.disabled = 1
+\end{lstlisting}
+
+	\end{itemize}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
