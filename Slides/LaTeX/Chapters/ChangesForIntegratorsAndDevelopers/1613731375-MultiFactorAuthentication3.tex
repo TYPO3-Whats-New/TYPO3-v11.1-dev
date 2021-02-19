@@ -21,10 +21,21 @@ setup.fields.mfaProviders.disabled = 1
 \end{lstlisting}
 
 		\item It is possible to restrict the available providers for some users
-			or groups (see "Access Rights/List), or by TSconfig:
+			or groups (see "Access Rights/List"), or by TSconfig:
 \begin{lstlisting}
 auth.mfa.disableProviders := addToList(totp)
 \end{lstlisting}
+
+		\item The following global configuration can be used to recommend a provider:\newline
+			\smaller\texttt{\$GLOBALS['TYPO3\_CONF\_VARS']['BE']['recommendedMfaProvider']}\normalsize
+
+		\item Integrators can overwrite the global configuration by TSconfig:
+\begin{lstlisting}
+auth.mfa.recommendedProvider = totp
+\end{lstlisting}
+
+		\item The MFA API is still experimental in TYPO3 v11.1 and subject to change.\newline
+			\smaller\textbf{Feedback welcome: see Slack channel \texttt{#mfa-in-core}}\normalsize
 
 	\end{itemize}
 
