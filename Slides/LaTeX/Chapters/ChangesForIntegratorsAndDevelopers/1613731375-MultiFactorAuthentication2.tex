@@ -21,7 +21,7 @@
 				(examples:
 				\href{https://github.com/derhansen/sf_yubikey}{sf\_yubikey},
 				\href{https://github.com/o-ba/hotp}{hotp}, and
-				\href{https://github.com/bnf/mfa_webauthn}{mfa_webauthn}).
+				\href{https://github.com/bnf/mfa_webauthn}{mfa\_webauthn}).
 			\normalsize
 		\item TSconfig can be used to disable the field for backend users:
 \begin{lstlisting}
@@ -33,12 +33,14 @@ setup.fields.mfaProviders.disabled = 1
 
 		\item The following global configuration controls if MFA is required:\newline
 			\smaller\texttt{\$GLOBALS['TYPO3\_CONF\_VARS']['BE']['requireMFA']}\normalsize
+
 			\begin{itemize}
 				\item 0: MFA is optional (default)
 				\item 1: MFA is required for all users
 				\item 2: MFA is required for non-admin users only
 				\item 3: MFA is required for admin users only
 			\end{itemize}
+
 	\end{itemize}
 
 \end{frame}
