@@ -12,9 +12,11 @@
 	\frametitle{Changes for Integrators and Developers}
 	\framesubtitle{Multi-Factor Authentication (1)}
 
-	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
+	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
 
 	\begin{itemize}
+		\item TYPO3 v11.1 features
+			\href{https://en.wikipedia.org/wiki/Multi-factor_authentication}{multi-factor authentication}.
 		\item The TYPO3 Core includes two MFA providers by default:
 
 			\begin{itemize}
@@ -23,11 +25,13 @@
 			\end{itemize}
 
 		\item Additional providers can be added as TYPO3 extensions.
-		\item MFA can be configured for every backend user by default.
-			Use TSconfig to disable this field:
+		\item TSconfig can be used to disable the field for backend users:
 \begin{lstlisting}
 setup.fields.mfaProviders.disabled = 1
 \end{lstlisting}
+
+		\item Providers also feature a locking functionality
+			(e.g. if OTP was entered wrongly multiple times).
 
 	\end{itemize}
 
