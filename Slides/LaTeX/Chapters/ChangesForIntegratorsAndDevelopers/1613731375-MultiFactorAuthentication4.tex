@@ -13,12 +13,25 @@
 	\framesubtitle{Multi-Factor Authentication (4)}
 
 	\begin{itemize}
+
 		\item \textbf{The MFA API is still experimental and subject to change}.
+
 		\item Extension developers are encouraged to review the PHP classes in:\newline
-			\small\texttt{typo3/sysext/core/Classes/Authentication/Mfa/}.\normalsize
+			\small\texttt{typo3/sysext/core/Classes/Authentication/Mfa/}\normalsize
+
+		\item Some initial demo extensions for example:\newline
+
+			\begin{itemize}\smaller
+				\item \href{https://github.com/derhansen/mfa_yubikey}{mfa\_yubikey}
+				\item \href{https://github.com/o-ba/mfa_hotp}{mfa\_hotp}
+				\item \href{https://github.com/bnf/mfa_webauthn}{mfa\_webauthn}
+			\end{itemize}\normalsize
+
 		\item Read more about current API in the
 			\href{https://docs.typo3.org/c/typo3/cms-core/master/en-us/Changelog/11.1/Feature-93526-MultiFactorAuthentication.rst}{changelog}.
+
 		\item We need your feedback! Please join the Slack channel \texttt{\#mfa-in-core}.
+
 	\end{itemize}
 
 \end{frame}
