@@ -8,19 +8,18 @@
 % Deprecation | 93506 | jQuery in tooltips
 
 \begin{frame}[fragile]
-	\frametitle{Changes for Integrators and Developers}
-	\framesubtitle{jQuery in Tooltips}
+	\frametitle{Changements pour les intégrateurs et développeurs}
+	\framesubtitle{jQuery dans les info-bulles}
 
 	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
 
 	\begin{itemize}
-		\item Passing jQuery objects to the methods \texttt{show()} and \texttt{hide()}
-			of the module \texttt{TYPO3/CMS/Backend/Tooltip} has been marked as
+		\item Passer des objets jQuery aux méthodes \texttt{show()} et \texttt{hide()}
+			du module \texttt{TYPO3/CMS/Backend/Tooltip} est marqué
 			\textbf{deprecated}.
-		\item This results in a deprecation warning in the browser's console.
-		\item Migration options:
-			Pass a single \texttt{HTMLElement} or a \texttt{NodeList} to the
-			functions.
+		\item L'usage émet un avertissement de dépréciation dans la console navigateur.
+		\item Option de migration~:
+			Passer un unique \texttt{HTMLElement} ou une \texttt{NodeList} au fonctions.
 	\end{itemize}
 
 \end{frame}

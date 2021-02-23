@@ -8,14 +8,14 @@
 % Feature | 92338 | Allow link text wrapping in TypolinkViewhelper
 
 \begin{frame}[fragile]
-	\frametitle{Extbase and Fluid}
+	\frametitle{Extbase et Fluid}
 	\framesubtitle{TypolinkViewhelper}
 
 	\lstset{basicstyle=\fontsize{7}{9}\ttfamily}
 
 	\begin{itemize}
-		\item The ViewHelper \texttt{<f:link.typolink ...>} features a new argument
-			\texttt{textWrap} which wraps the link title.
+		\item Le ViewHelper \texttt{<f:link.typolink ...>} fourni l'argument
+			\texttt{textWrap} qui entoure le titre du lien.
 
 		\item For example:
 \begin{lstlisting}
@@ -27,7 +27,7 @@
 <a href="page-123"><span>My page title</span></a>
 \end{lstlisting}
 
-		\item Note: don't forget to escape quotes:
+		\item Note~: n'oubliez pas de protéger les guillemets~:
 \begin{lstlisting}
 <f:link.typolink parameter="123" textWrap="<span class=\"small\">|</span>" />
 \end{lstlisting}
