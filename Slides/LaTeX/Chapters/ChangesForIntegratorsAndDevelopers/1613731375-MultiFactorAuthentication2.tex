@@ -9,23 +9,23 @@
 
 \begin{frame}[fragile]
 	\frametitle{Changements pour les intégrateurs et développeurs}
-	\framesubtitle{Multi-factor Authentication (2)}
+	\framesubtitle{Authentification multi-facteurs (2)}
 
 	\begin{itemize}
 
-		\item Additional providers can be added as TYPO3 extensions.
+		\item Des fournisseurs supplémentaires peuvent être ajouté dans les extensions TYPO3.
 
-		\item Providers also feature a locking functionality
-			(e.g.\ if OTP was entered wrongly multiple times).
+		\item Les fournisseurs incluent la possibilité de verrouillage
+			(i.e.\ si le mot de passe unique est incorrectement saisie plusieurs fois).
 
-		\item The following global configuration controls if MFA is required:\newline
+		\item Cette configuration globale contrôle si la MFA est requise~:\newline
 			\smaller\texttt{\$GLOBALS['TYPO3\_CONF\_VARS']['BE']['requireMFA']}\normalsize
 
 			\begin{itemize}
-				\item \texttt{0}: MFA is optional (default)
-				\item \texttt{1}: MFA is required for all users
-				\item \texttt{2}: MFA is required for non-admin users only
-				\item \texttt{3}: MFA is required for admin users only
+				\item \texttt{0}~: MFA est optionnel (défaut)
+				\item \texttt{1}~: MFA est requis pour tous les utilisateurs
+				\item \texttt{2}~: MFA est requis pour les non-administrateurs seulement
+				\item \texttt{3}~: MFA est requis pour les administrateurs seulement
 			\end{itemize}
 
 	\end{itemize}

@@ -9,19 +9,19 @@
 
 \begin{frame}[fragile]
 	\frametitle{Changements pour les intégrateurs et développeurs}
-	\framesubtitle{Console Command List (2)}
+	\framesubtitle{Liste des commandes console (2)}
 
 	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
 
 	\begin{itemize}
-		\item Two new properties have been added to the \texttt{console.command}
-			dependency injection tag (to used in the \texttt{Services.yaml} file):
+		\item Deux propriétés sont ajoutées au tag d'injection de dépendance
+			\texttt{console.command} (utilisées dans le fichier \texttt{Services.yaml}):
 			\begin{itemize}
 				\item \texttt{description}
 				\item \texttt{hidden}
 			\end{itemize}
 			\vspace{0.2cm}
-		\item The description must be set next to the command name:
+		\item La description doit être indiquée à côté du nom de la commande~:
 \begin{lstlisting}
 services:
   My\Namespace\Command\ExampleCommand:
@@ -32,8 +32,8 @@ services:
         hidden: false
 \end{lstlisting}
 
-		\item Extension authors should use this method instead of setting
-			description through \texttt{\$this->setDescription()}.
+		\item Les auteurs d'extension doivent utiliser cette méthode plutôt que de définir
+			la description avec \texttt{\$this->setDescription()}.
 
 	\end{itemize}
 

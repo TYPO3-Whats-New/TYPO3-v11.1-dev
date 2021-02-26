@@ -9,26 +9,26 @@
 
 \begin{frame}[fragile]
 	\frametitle{Changements pour les intégrateurs et développeurs}
-	\framesubtitle{Multi-factor Authentication (3)}
+	\framesubtitle{Authentification multi-facteurs (3)}
 
 	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
 
 	\begin{itemize}
-		\item TSconfig can be used to disable the MFA field for backend users:
+		\item Du TSconfig est utilisale pour désactiver le champ MFA pour les utilisateurs Backend~:
 \begin{lstlisting}
 setup.fields.mfaProviders.disabled = 1
 \end{lstlisting}
 
-		\item It is possible to restrict the available providers for some users
-			or groups (see "Access Rights/List"), or by TSconfig:
+		\item Il est possible de restreindre les fournisseurs disponibles pour certains utilisateurs
+			ou groupes (voir «~Droits d'accès~»), ou par TSconfig~:
 \begin{lstlisting}
 auth.mfa.disableProviders := addToList(totp)
 \end{lstlisting}
 
-		\item The following global configuration can be used to recommend a provider:\newline
+		\item Cette configuration globale permet de recommander un fournisseur~:\newline
 			\smaller\texttt{\$GLOBALS['TYPO3\_CONF\_VARS']['BE']['recommendedMfaProvider']}\normalsize
 
-		\item Integrators can overwrite the global configuration by TSconfig:
+		\item Les intégrateurs peuvent surcharger la configuration globale à l'aide de TSconfig~:
 \begin{lstlisting}
 auth.mfa.recommendedProvider = totp
 \end{lstlisting}
