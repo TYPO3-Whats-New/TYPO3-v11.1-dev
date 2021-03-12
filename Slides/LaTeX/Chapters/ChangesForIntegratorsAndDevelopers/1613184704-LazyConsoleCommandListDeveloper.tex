@@ -8,20 +8,20 @@
 % Feature | 93174 | Lazy console command list
 
 \begin{frame}[fragile]
-	\frametitle{Changes for Integrators and Developers}
-	\framesubtitle{Console Command List (2)}
+	\frametitle{Änderungen für Integratoren und Entwickler}
+	\framesubtitle{Konsolen-Befehlsliste (2)}
 
 	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
 
 	\begin{itemize}
-		\item Two new properties have been added to the \texttt{console.command}
-			dependency injection tag (to used in the \texttt{Services.yaml} file):
+		\item Zwei neue Eigenschaften wurden zum \texttt{console.command}
+			Dependency Injection-Tag (zur Verwendung in der Datei \texttt{Services.yaml} file) hinzugefügt:
 			\begin{itemize}
 				\item \texttt{description}
 				\item \texttt{hidden}
 			\end{itemize}
 			\vspace{0.2cm}
-		\item The description must be set next to the command name:
+		\item Die Beschreibung muss neben dem Befehlsnamen angegeben werden:
 \begin{lstlisting}
 services:
   My\Namespace\Command\ExampleCommand:
@@ -32,8 +32,8 @@ services:
         hidden: false
 \end{lstlisting}
 
-		\item Extension authors should use this method instead of setting
-			description through \texttt{\$this->setDescription()}.
+		\item Autoren von Erweiterungen sollten diese Methode verwenden,
+			anstatt die Beschreibung über \texttt{\$this->setDescription()} zu setzen.
 
 	\end{itemize}
 
