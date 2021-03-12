@@ -8,24 +8,24 @@
 % Feature | 93526 | Multi-Factor Authentication (2)
 
 \begin{frame}[fragile]
-	\frametitle{Changes for Integrators and Developers}
-	\framesubtitle{Multi-factor Authentication (2)}
+	\frametitle{Änderungen für Integratoren und Entwickler}
+	\framesubtitle{Multi-Faktor-Authentifizierung (2)}
 
 	\begin{itemize}
 
-		\item Additional providers can be added as TYPO3 extensions.
+		\item Weitere Provider können als TYPO3-Extensions hinzugefügt werden.
 
-		\item Providers also feature a locking functionality
-			(e.g.\ if OTP was entered wrongly multiple times).
+		\item Die Provider verfügen auch über eine Sperrfunktion
+			(z.B.\ wenn das OTP mehrfach falsch eingegeben wurde).
 
-		\item The following global configuration controls if MFA is required:\newline
+		\item Die folgende globale Konfiguration steuert, ob MFA erforderlich ist:\newline
 			\smaller\texttt{\$GLOBALS['TYPO3\_CONF\_VARS']['BE']['requireMFA']}\normalsize
 
 			\begin{itemize}
-				\item \texttt{0}: MFA is optional (default)
-				\item \texttt{1}: MFA is required for all users
-				\item \texttt{2}: MFA is required for non-admin users only
-				\item \texttt{3}: MFA is required for admin users only
+				\item \texttt{0}: MFA ist optional (Standard)
+				\item \texttt{1}: MFA ist für alle Benutzer erforderlich
+				\item \texttt{2}: MFA ist nur für Nicht-Admin-Benutzer erforderlich
+				\item \texttt{3}: MFA ist nur für Admin-Benutzer erforderlich
 			\end{itemize}
 
 	\end{itemize}
