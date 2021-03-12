@@ -8,13 +8,13 @@
 % Feature | 93455 | Backend Routes restricted to specified HTTP methods
 
 \begin{frame}[fragile]
-	\frametitle{Changes for Integrators and Developers}
-	\framesubtitle{Backend Routes}
+	\frametitle{Änderungen für Integratoren und Entwickler}
+	\framesubtitle{Backend-Routes}
 
 	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
 
 	\begin{itemize}
-		\item Backend routes can now be restricted to HTTP methods.\newline
+		\item Backend-Routes können jetzt auf HTTP-Methoden beschränkt werden.\newline
 			\small(e.g. \texttt{GET}, \texttt{POST}, \texttt{PUT}, \texttt{DELETE})
 		\item The optional property "\texttt{methods}" can be set in the files:
 			\begin{itemize}\smaller
@@ -22,7 +22,7 @@
 				\item \texttt{Configuration/Backend/Ajax.php}
 			\end{itemize}
 			\vspace{0.2cm}
-		\item For example:
+		\item Beispielsweise:
 \begin{lstlisting}
 return [
   'my_route' => [
@@ -33,7 +33,7 @@ return [
 ];
 \end{lstlisting}
 
-		\item No restriction applies if no property is set.
+		\item Es wird keine Einschränkung gebraucht, wenn keine Property gesetzt wird.
 
 	\end{itemize}
 
